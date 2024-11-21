@@ -1,0 +1,34 @@
+package crt;
+import java.util.HashMap;
+public class Hashmap {
+	
+
+
+
+		public static void main(String[] args) {
+			
+					HashMap<String,String> grades=new HashMap<String,String>();
+					grades.put("kesav","A");
+					grades.put("karun","C");
+					grades.put("kourav","B");
+					grades.put("kiran","A");
+					
+					System.out.println("Student Grade:"+grades);
+					System.out.println("Student Grade:"+grades.get("kesav"));
+					
+					grades.put("kamal", "B");
+					System.out.println("Update Grade:"+grades);
+					
+					grades.remove("karun");
+					System.out.println("Removing:"+grades);
+					
+					System.out.println("Does Kiran exists?:"+grades.containskey("kiran"));
+					
+					System.out.println("All studen Grades:");
+					for(HashMap.Entry<String,String> entry:grades.entryset())
+						
+				}
+
+		}
+
+
